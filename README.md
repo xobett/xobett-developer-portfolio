@@ -1,77 +1,21 @@
-# React + TypeScript + Vite
+# XoBett Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+At last, it's time to make my own personal portfolio website! I'm thrilled to make my portfolio website not only great in design, but fun to navigate as well! Kudos to myself since it's my very first React project made on my own, let's hit it!
 
-Currently, two official plugins are available:
+In order to make this fun, I will be logging my progress right below! Grab a cup of coffee, and feel free to double check what I implemented with the final result! (Once I face this React demon, of course!)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 07/17/2026
+To begin with, I started by creating an empty react project using vite. You can do the same by running this command on your CLI!
 
 ```
+npm create vite@latest enter-your-app-name -- --template react-ts
+```
+Then, you will be prompted to select your project settings, in my case, I decided to give TypeScript a go. After that, I just cleaned up all up and left my project blank and ready to start working with!
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Finally, I installed React Router, so it allows my app to show different elements depending on the routes I declare. I installed it by running the following command on my CLI:
 
 ```
+npm install -D react-router-dom
+```
+
+And that's about it! Follow along to keep yourself updated on my portfolio website progress!
