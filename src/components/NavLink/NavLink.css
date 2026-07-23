@@ -1,0 +1,7 @@
+.navlink {
+  background-color: var(--divider-bg);
+  border-radius: 6px;
+  flex: 1;
+  display: grid;
+  place-items: center;
+}

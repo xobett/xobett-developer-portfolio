@@ -1,10 +1,13 @@
-import { Outlet } from "react-router-dom";
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import ShapeDivider from "./components/ShapeDivider/ShapeDivider";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div>This is App</div>
+      <ShapeDivider></ShapeDivider>
+      <Navbar></Navbar>
       <Outlet />
     </>
   );

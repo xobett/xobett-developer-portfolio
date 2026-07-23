@@ -1,0 +1,24 @@
+nav#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+
+  margin-top: 24px;
+  width: 50%;
+}
+
+#navbar ul {
+  height: 48px;
+
+  display: flex;
+  gap: 10px;
+
+  font-weight: bold;
+
+  background-color: var(--bg);
+  padding-inline: 10px;
+  padding-block: 8px;
+  border-radius: var(--border-radius-sm);
+}

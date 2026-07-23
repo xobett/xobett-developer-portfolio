@@ -1,0 +1,29 @@
+.shape-divider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.shape-divider svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 127px;
+}
+
+.shape-divider .shape-fill {
+  fill: var(--divider-bg);
+}
+
+@media (max-width: 768px) {
+  .shape-divider {
+    width: 300%;
+  }
+
+  .shape-divider svg {
+    height: 100px;
+  }
+}

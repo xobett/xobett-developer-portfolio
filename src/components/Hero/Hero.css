@@ -1,0 +1,41 @@
+#hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-size: 1.3rem;
+}
+
+.presentation-container {
+  text-align: center;
+}
+
+.professions {
+  margin-bottom: 12px;
+}
+
+.professions span {
+  display: inline-block;
+  padding-inline: 10px;
+  color: #fff;
+  border-radius: var(--border-radius-sm);
+  background-color: unset;
+}
+
+span[datatype="full-stack"] {
+  background-color: var(--clr-deep-sky-blue);
+}
+
+span[datatype="game"] {
+  background-color: var(--clr-deep-pink);
+}
+
+.profile-image-container,
+.presentation-container {
+  display: grid;
+  place-items: center;
+}
+
+.profile-image-container img {
+  width: var(--img-sz-sm);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 2px 4px 2px 1px #00000070;
+}
