@@ -57,8 +57,8 @@
 }
 
 .stack-list li {
+  flex: 0 0 auto;
   text-align: center;
-  flex-shrink: 0;
   padding-block: 8px;
 
   border-radius: 6px;
@@ -85,3 +85,20 @@
 .stack-list li:hover svg {
   filter: grayscale(0);
 }
+
+.stack-list {
+  animation: scroll 10s linear infinite;
+}
+
+.stack-container {
+  overflow: hidden;
+}
+
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+} */

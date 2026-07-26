@@ -1,5 +1,5 @@
 #hero {
-  padding: 15px;
+  padding-inline: 15px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   font-size: 1.3rem;
