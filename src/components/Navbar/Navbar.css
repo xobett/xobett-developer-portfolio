@@ -1,24 +1,24 @@
-nav#navbar {
-  position: fixed;
+#navbar {
+  position: sticky;
   top: 0;
   left: 0;
-  right: 0;
-  margin-inline: auto;
+  width: 100%;
 
-  margin-top: 24px;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.719);
+  padding-block: 15px;
+  backdrop-filter: blur(10px);
+}
+
+#navbar div {
+  width: 30%;
 }
 
 #navbar ul {
-  height: 48px;
-
   display: flex;
   gap: 10px;
 
   font-weight: bold;
-
-  background-color: var(--bg);
-  padding-inline: 10px;
-  padding-block: 8px;
-  border-radius: var(--border-radius-sm);
 }

@@ -6,8 +6,8 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-      <ShapeDivider></ShapeDivider>
       <Navbar></Navbar>
+      <ShapeDivider></ShapeDivider>
       <Outlet />
     </>
   );

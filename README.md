@@ -24,3 +24,9 @@ And that's about it! Follow along to keep yourself updated on my portfolio websi
 Added a floating Navbar to navigate through the different sections of my portfolio! Can´t tell you that I didn´t wanted to include some sections of things I like, such as The Marias, Spider-Man, Astrobot, etc. I guess I´ll keep it professional and just keep things related to my portfolio!
 
 Lastly, I added an image of me and some basic layout for desktop.
+
+## 24/07/2026
+Added "About me" and "Tech Stack" section! I feel proud of how colorful this is looking. Also removed some routes that were not going to be useful:
+
+- /about-me
+- /education

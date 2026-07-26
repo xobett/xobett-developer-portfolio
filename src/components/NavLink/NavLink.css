@@ -1,7 +1,12 @@
 .navlink {
-  background-color: var(--divider-bg);
   border-radius: 6px;
   flex: 1;
   display: grid;
   place-items: center;
+
+  height: 35px;
+}
+
+.navlink[datatype="active"] {
+  background-color: rgb(101, 70, 240);
 }
