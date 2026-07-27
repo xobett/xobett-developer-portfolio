@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Stack.css";
 
 export default function Stack() {
@@ -14,7 +14,7 @@ export default function Stack() {
     { stack: "tools", label: "Tools", backgroundColor: "soft-periwinkle" },
   ];
   const isActive = (term: string) => activeStack === term;
-  
+
   return (
     <div id="stack">
       <div className="about-me-container">
