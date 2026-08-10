@@ -30,3 +30,6 @@ Added "About me" and "Tech Stack" section! I feel proud of how colorful this is 
 
 - /about-me
 - /education
+
+## 10/08/2026
+Bad news: I lost tons of progress on another laptop ༼ つ ಥ_ಥ ༽つ. Still, today I refactored what I had on my Stack.tsx component, instead of just hardcoding a bunch of svgs's, I placed all of them in another component and just exported them! 
