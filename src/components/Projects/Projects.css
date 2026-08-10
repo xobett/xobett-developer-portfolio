@@ -1,0 +1,28 @@
+#projects {
+  height: 100%;
+  display: grid;
+  grid-template-columns: max(240px, 16%) 1fr;
+}
+
+.project-selection-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.project-selection-container ul {
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  background-color: var(--clr-transparent-black);
+  border-radius: 0 20px 20px 0;
+  height: 400px;
+  width: 270px;
+
+  overflow: auto;
+}
+
+.projects-container {
+}

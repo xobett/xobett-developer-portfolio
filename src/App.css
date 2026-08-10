@@ -3,6 +3,7 @@ body {
   background-color: var(--bg);
   color: var(--txt-clr);
 
+  width: 100svw;
   height: 100svh;
 }
 
@@ -11,5 +12,8 @@ body::-webkit-scrollbar {
 }
 
 #root {
+  width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }

@@ -33,7 +33,7 @@ export default function Stack() {
     { framework: "MySQL", icon: Icons.MySQLIcon },
   ];
   const toolsStack = [
-    { tool: "Docker", icon: Icons.CSharpIcon },
+    { tool: "Docker", icon: Icons.DockerIcon },
     { tool: "Git / GitHub", icon: Icons.GitGitHubIcon },
     { tool: "Jest", icon: Icons.JestIcon },
     { tool: "Linux", icon: Icons.LinuxIcon },
@@ -57,16 +57,16 @@ export default function Stack() {
         <h2>Tech Stack</h2>
         <div className="stack-container">
           <ul className={`stack-list ${isActive("languages") ? "active" : ""}`}>
-            {languageStack.map((lg) => (
-              <li key={lg.language}>
+            {[...languageStack, ...languageStack].map((lg, index) => (
+              <li key={index}>
                 {<lg.icon />}
                 <span>{lg.language}</span>
               </li>
             ))}
           </ul>
           <ul className={`stack-list ${isActive("frontend") ? "active" : ""}`}>
-            {frontendStack.map((fw) => (
-              <li key={fw.framework}>
+            {[...frontendStack, ...frontendStack].map((fw, index) => (
+              <li key={index}>
                 {<fw.icon />}
                 <span>{fw.framework}</span>
               </li>
@@ -75,16 +75,16 @@ export default function Stack() {
           <ul
             className={`stack-list ${isActive("backend-databases") ? "active" : ""}`}
           >
-            {backendStack.map((fw) => (
-              <li key={fw.framework}>
+            {[...backendStack, ...backendStack].map((fw, index) => (
+              <li key={index}>
                 {<fw.icon />}
                 <span>{fw.framework}</span>
               </li>
             ))}
           </ul>
           <ul className={`stack-list ${isActive("tools") ? "active" : ""}`}>
-            {toolsStack.map((t) => (
-              <li key={t.tool}>
+            {[...toolsStack, ...toolsStack].map((t, index) => (
+              <li key={index}>
                 {<t.icon />}
                 <span>{t.tool}</span>
               </li>

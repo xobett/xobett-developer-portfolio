@@ -1,4 +1,5 @@
 #navbar {
+  flex: 0 0 auto;
   position: sticky;
   top: 0;
   left: 0;
@@ -7,7 +8,7 @@
   display: flex;
   justify-content: center;
 
-  background-color: rgba(0, 0, 0, 0.719);
+  background-color: var(--clr-transparent-black);
   padding-block: 15px;
   backdrop-filter: blur(10px);
 }
