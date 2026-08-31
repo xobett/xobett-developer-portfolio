@@ -14,15 +14,61 @@
   padding-block: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 40px;
 
+  margin-left: 20px;
   background-color: var(--clr-transparent-black);
-  border-radius: 0 20px 20px 0;
+  border-radius: 20px;
   height: 400px;
-  width: 270px;
+  width: 230px;
 
   overflow: auto;
 }
 
+.project-selection-container a {
+  position: relative;
+}
+
+.project-selection-container a.active::before {
+  content: "";
+  background-color: var(--clr-soft-periwinkle);
+  width: calc(100% + 10px);
+  left: -5px;
+  bottom: -8px;
+  height: 4px;
+  position: absolute;
+  border-radius: 10px;
+}
+
 .projects-container {
+  display: flex;
+  align-items: center;
+}
+
+.projects-container .background {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 96%;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.grid-container {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  overflow: auto;
+  grid-auto-rows: 100%;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px rgb(40, 40, 99);
+}
+
+.project {
+  color: #000;
+  border-radius: 10px;
 }

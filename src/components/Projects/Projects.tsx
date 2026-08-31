@@ -6,17 +6,32 @@ export default function Projects() {
       <div className="project-selection-container">
         <ul>
           <li>
-            <a href="#">All</a>
+            <a className="active" href="#">
+              All
+            </a>
           </li>
           <li>
-            <a href="#">Web Development</a>
+            <a className="" href="#">
+              Web
+            </a>
           </li>
           <li>
-            <a href="#">Game Development</a>
+            <a className="" href="#">
+              Game
+            </a>
           </li>
         </ul>
       </div>
-      <div className="projects-container"></div>
+      <div className="projects-container">
+        <div className="background">
+          <div className="grid-container">
+            <div className="project">First</div>
+            <div className="project">Second</div>
+            <div className="project">Third</div>
+            <div className="project">Fourth</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
