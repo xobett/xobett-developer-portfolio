@@ -95,7 +95,7 @@ export default function Stack() {
           {stackButtons.map((st) => (
             <button
               key={st.stack}
-              className={`btn btn-banana ${isActive(st.stack) ? "active" : ""}`}
+              className={`btn ${isActive(st.stack) ? "active" : ""}`}
               onClick={() => setActiveStack(st.stack)}
               data-bckg-clr={st.backgroundColor}
             >
