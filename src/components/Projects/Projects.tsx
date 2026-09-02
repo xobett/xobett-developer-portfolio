@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Projects.css";
+import { Project } from "../Project/Project";
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
@@ -23,58 +24,20 @@ export default function Projects() {
       <div className="projects-container">
         <div className="background">
           <ul className="grid-container">
-            <li className="project">
-              <div className="img-container">
-                <img
-                  src="/projects/web/tic-tac-toe.png"
-                  alt="Image of Tic Tac Toe project"
-                />
-              </div>
-              <div className="description">
-                <h2>Project title</h2>
-                <p>Description</p>
-                <p>Tools</p>
-              </div>
-            </li>
-            <li className="project">
-              <div className="img-container">
-                <img
-                  src="/projects/web/tic-tac-toe.png"
-                  alt="Image of Tic Tac Toe project"
-                />
-              </div>
-              <div className="description">
-                <h2>Project title</h2>
-                <p>Description</p>
-                <p>Tools</p>
-              </div>
-            </li>
-            <li className="project">
-              <div className="img-container">
-                <img
-                  src="/projects/web/tic-tac-toe.png"
-                  alt="Image of Tic Tac Toe project"
-                />
-              </div>
-              <div className="description">
-                <h2>Project title</h2>
-                <p>Description</p>
-                <p>Tools</p>
-              </div>
-            </li>
-            <li className="project">
-              <div className="img-container">
-                <img
-                  src="/projects/web/tic-tac-toe.png"
-                  alt="Image of Tic Tac Toe project"
-                />
-              </div>
-              <div className="description">
-                <h2>Tic Tac Toe</h2>
-                <p>Description</p>
-                <p>Tools</p>
-              </div>
-            </li>
+            <Project
+              imgUrl="/projects/web/to-do-app.png"
+              imgAlt="To do web app project image"
+              title="To Do App"
+              description="To do App with local storage for data persistance."
+              tools={[]}
+            />
+            <Project
+              imgUrl="/projects/web/weather-api.png"
+              imgAlt="Weather API project image"
+              title="Weather API"
+              description="Weather API to fetch weather conditions with both Celsius and Farenheit conversion."
+              tools={[]}
+            />
           </ul>
         </div>
       </div>
