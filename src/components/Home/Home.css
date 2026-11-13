@@ -3,7 +3,7 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100% 60%;
+  grid-template-rows: 100% 50%;
 }
 
 @media (max-width: 768px) {

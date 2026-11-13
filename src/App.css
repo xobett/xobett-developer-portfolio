@@ -1,6 +1,6 @@
 body {
   font-family: var(--font-family);
-  background-color: var(--bg);
+  background: var(--bg-gradient);
   color: var(--txt-clr);
 
   width: 100svw;

@@ -17,15 +17,10 @@ export default function Hero() {
             Experienced in building scalable, reliable, responsive and
             high-quality web applications
           </p>
-          <div className="btns-container">
-            <button className="btn">Go to projects</button>
-            <button className="btn">Download CV</button>
-          </div>
+          <div className="btns-container"></div>
         </div>
       </div>
-      <div className="profile-image-container">
-        <img src={profileImage} alt="Image of author and developer, XoBett" />
-      </div>
+      <div className="profile-image-container"></div>
     </div>
   );
 }

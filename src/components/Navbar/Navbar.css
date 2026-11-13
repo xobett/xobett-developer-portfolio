@@ -3,22 +3,13 @@
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
 
-  display: flex;
-  justify-content: center;
-
-  background-color: var(--clr-transparent-black);
   padding-block: 15px;
-  backdrop-filter: blur(10px);
-}
-
-#navbar div {
-  width: 30%;
 }
 
 #navbar ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 
   font-weight: bold;
